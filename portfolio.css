@@ -1,6 +1,6 @@
 
 .home-bg {                                                                              /* To blur the background image  */
-  background: url("bgImage.png") no-repeat center center;
+  background: url("bgImage.PNG") no-repeat center center;
   -webkit-background-size:cover;
   background-size: cover;
   min-height: 660px;
