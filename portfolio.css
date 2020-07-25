@@ -1,0 +1,479 @@
+
+.home-bg {                                                                              /* To blur the background image  */
+  background: url("bgImage.png") no-repeat center center;
+  -webkit-background-size:cover;
+  background-size: cover;
+  min-height: 660px;
+  color: #fff;
+  position: relative;
+}
+.home-bg::before{
+  position:absolute;
+  content: "";
+  background-color: rgba(0,0,0,0.8);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.home-bg .contentBg{                                                                      /* To pop up text over the image  */
+  position: absolute;
+  z-index: 5;
+  text-shadow: 0 0 2px #000;
+  top: 50%;
+  left: 50%;
+  width: 850px;
+  transform: translate(-50%,-50%);
+  text-align: left;
+  line-height: 20px;
+
+}
+
+
+.bgInfo{
+  text-shadow: 0 0 2px rgb(15, 15, 15);
+  text-align: left;
+  width: 850px;
+  margin-top: 170px;
+  margin-left: 100px;
+}
+.bgInfo h1{
+  font-size: 30px;
+}
+
+
+.socials a{
+    color: #fff;
+    font-size: 2.0em;
+    padding: 5px;
+    transition: all 0.5s linear;
+}
+.socials a:hover{
+    color: #f90;
+}
+
+
+.navB{
+  margin-top: 50px;
+}
+
+
+.introNavBar{
+  background-color: black;
+  color:#fff;
+}
+
+
+.intro-bg h1 {
+  font-size: 15px;
+  color: #f90;
+    
+}
+.intro-bg .text-1 {
+  animation: text1;
+}
+.intro-bg .text-2 {
+  animation: text2;
+}
+.intro-bg .text-1,
+.intro-bg .text-2 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 20s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+.intro-bg .text-1::after,
+.intro-bg .text-2::after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  animation: caret infinite;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, end);
+}
+  
+ 
+.intro-about-pic {
+  text-align: center;
+  padding: 25px;
+}
+.intro-about-pic figure img{                /* requires a square image */
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 100%;
+  box-shadow: 0 0 15px #000;
+}
+.intro-about-pic figure figcaption {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-top: 10px;
+  font-family: Montserrat;
+}
+
+
+.intro-about-text{
+  padding: 25px;
+}
+.intro-about-text h2{
+  font-family: Montserrat;
+  font-weight: 300;
+  text-shadow: 0 0 1px #666;
+}
+.intro-about-text p{
+  line-height: 2;
+}
+
+
+.steps-form {  
+  width: 10%;
+  height: 70%;
+  position: relative; 
+}
+.steps-form .steps-row:before {
+  left: 180px;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 8px;
+  height: 530px;
+  background-color: #ccc; 
+}
+.steps-form .steps-row .steps-step {
+  display: table-cell;
+  text-align: center;
+  position: relative; 
+}
+.steps-form .steps-row .steps-step .btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+  margin-top: 0; 
+}
+
+
+.graduatea i {
+  margin-left: 88px;
+  background-color: darkorange;
+  width: 50px;
+  height: 50px;
+  margin-top: -17px;
+  top: 50px; 
+  font-size: 25px;
+  padding-top: 13px;
+  border-radius: 100%;
+  position: absolute;
+}
+.graduateb i {
+  margin-left: 150px;
+  background-color: darkorange;
+  width: 50px;
+  height: 50px;
+  margin-top: 80px;
+  font-size: 25px;
+  padding-top: 13px;
+  padding-left: 9px;
+  border-radius: 100%;
+  position: absolute;
+}
+.graduatec i {
+  margin-left: 150px;
+  background-color: darkorange;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  top: 50px; 
+  font-size: 25px;
+  padding-top: 13px;
+  padding-left: 9px;
+  border-radius: 100%;
+  position: relative;
+  margin-bottom: 150px;
+}
+
+
+.edu1 p{
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 30px;
+  width: 500px;
+  height: 40px;
+}
+.edu2 p{
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 220px;
+  margin-top: 80px;
+  width: 500px;
+  height: 40px;
+}
+.edu3 p{
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: left;
+  margin-left: 220px;
+  margin-top: 80px;
+  width: 500px;
+  height: 40px;
+}
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.row {
+  margin: 10px -16px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.contentP {
+  background-color: rgb(226, 221, 221);
+  padding: 10px;
+}
+
+
+.show {
+  display: block;
+}
+
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px; 
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(49, 49, 49, 0.5);
+}
+
+
+.contentP .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.contentP .aaa{
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.buton {
+  border: none;
+  padding: 3px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 250px;
+  position: relative;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(78, 77, 77);
+}
+.buton:hover {background-color: white ;
+  color: black;
+}
+
+
+
+@media screen and (max-width: 1105px){
+
+  .edu1 p{
+    font-size: 15px;
+  }
+  .edu2 p{
+    font-size: 15px;
+  }
+  .edu3 p{
+    font-size: 15px;
+  }
+}
+
+
+@media screen and (max-width: 1089px){
+
+  .bgInfo h1{
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 1000px){           /* when screen gets small figcaption goes */
+  
+  .intro-about-pic figure img{
+     margin-bottom: 0;
+  }
+  .intro-about-pic figure figcaption {
+     display: none;
+  }
+
+  .home-bg {                                                                              /* To blur the background image  */
+    min-width: 300px;
+    min-height: 660px;
+  }
+}
+
+
+@media screen and (max-width: 1000px){
+  
+  .bgInfo h1{
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 998px){
+
+  .steps-form .steps-row:before {
+    left: 80px;
+    height: 520px;
+  }
+  
+  .graduatea i {
+    margin-left: -03px;
+  }
+  .graduateb i {
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+  .graduatec i {
+    margin-left: 50px;
+    margin-top: 35px;
+  }
+
+  .edu1 p{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  .edu2 p{
+    font-size: 15px;
+    margin-left: 125px;
+    margin-top: 80px;
+  }
+  .edu3 p{
+    font-size: 15px;
+    margin-left: 125px;
+    margin-top: 85px;
+  }
+}
+
+
+@media screen and (max-width: 992px){
+  
+  .home-bg {          
+    margin-top: 60px;
+  }
+}
+
+
+@media screen and (max-width: 798px){
+
+  .navB{
+    margin-top: 10px;
+  }
+ 
+  .bgInfo{
+    width: 400px;
+    margin-top: 70px;
+    margin-left: 150px;
+  } 
+}
+
+
+@media screen and (max-width: 575px){
+  
+  .bgInfo{
+    width: 400px;
+    margin-top: 70px;
+    margin-left: 50px;
+  } 
+
+  .steps-form .steps-row:before {
+    left: 80px;
+    height: 520px;
+  }
+  .graduatea i {
+    margin-left: -205px;
+  }
+  .graduateb i {
+    margin-left: 50px;
+    margin-top: 80px;
+  }
+  .graduatec i {
+    margin-left: 50px;
+    margin-top: 35px;
+  }
+
+  .edu1 p{
+    font-size: 12px;
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+  .edu2 p{
+    font-size: 12px;
+    margin-left: 120px;
+    margin-top: 80px;
+  }
+  .edu3 p{
+    font-size: 12px;
+    margin-left: 120px;
+    margin-top: -150px;
+  }
+
+}
+
