@@ -1,5 +1,6 @@
+/* 
 
-.home-bg {                                                                              /* To blur the background image  */
+.home-bg {                                                                              To blur the background image  
   background: url("bgImage.PNG") no-repeat center center;
   -webkit-background-size:cover;
   background-size: cover;
@@ -16,7 +17,7 @@
   top: 0;
   bottom: 0;
 }
-.home-bg .contentBg{                                                                      /* To pop up text over the image  */
+.home-bg .contentBg{                                                                     To pop up text over the image 
   position: absolute;
   z-index: 5;
   text-shadow: 0 0 2px #000;
@@ -28,8 +29,6 @@
   line-height: 20px;
 
 }
-
-
 .bgInfo{
   text-shadow: 0 0 2px rgb(15, 15, 15);
   text-align: left;
@@ -39,35 +38,114 @@
 }
 .bgInfo h1{
   font-size: 30px;
+} 
+
+*/
+
+
+
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+.row {
+  margin: 10px -16px;
+}
+.row,
+.row > .column {
+  padding: 8px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px; 
+}
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(49, 49, 49, 0.5);
+}
+
+.buton {
+  border: none;
+  padding: 3px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-left: 250px;
+  position: relative;
+  width: 120px;
+  background-color: black;
+  color: white;
+  border: 2px solid rgb(78, 77, 77);
+}
+.buton:hover {background-color: white ;
+  color: black;
 }
 
 
+
+/* Socials */
 .socials a{
-    color: #fff;
-    font-size: 2.0em;
-    padding: 5px;
-    transition: all 0.5s linear;
+  color: #fff;
+  font-size: 2.0em;
+  padding: 5px;
+  transition: all 0.5s linear;
 }
 .socials a:hover{
-    color: #f90;
+  color: #f90;
 }
 
 
+
+/* Navigation Bar */
 .navB{
   margin-top: 50px;
 }
-
-
 .introNavBar{
   background-color: black;
   color:#fff;
 }
 
 
+
+/* Introduction Section */
 .intro-bg h1 {
   font-size: 15px;
-  color: #f90;
-    
+  color: #f90; 
 }
 .intro-bg .text-1 {
   animation: text1;
@@ -94,19 +172,14 @@
   animation-duration: 1s;
   animation-timing-function: steps(1, end);
 }
-  
- 
 .intro-about-pic {
   text-align: center;
-  padding: 25px;
+  padding: 20px;
 }
-.intro-about-pic figure img{                /* requires a square image */
-  display: block;
+.intro-about-pic figure img{                
   width: 200px;
   height: 200px;
-  margin: 0 auto;
-  border-radius: 100%;
-  box-shadow: 0 0 15px #000;
+  border-radius: 20%;
 }
 .intro-about-pic figure figcaption {
   font-size: 1.5em;
@@ -114,8 +187,6 @@
   margin-top: 10px;
   font-family: Montserrat;
 }
-
-
 .intro-about-text{
   padding: 25px;
 }
@@ -128,7 +199,110 @@
   line-height: 2;
 }
 
+.qualities {
+  background-color: #feb84f;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 5%;
+  margin-right: 2%;
+  margin-top: 20px;
+}
 
+
+
+/* Work Experience Section */
+.dell img{
+  width:150px;
+  height: 150px; 
+  margin-left: 10%; 
+  border: 1px black;
+  border-radius: 5%; 
+  margin-top: 10px;
+  margin-bottom: -20px; 
+  background-color: #fff;
+}
+.dell-info a{
+  margin-right: 10%;
+  margin-top: 3%; 
+  margin-bottom: 2%;
+}
+.dell-info span{
+  font-size: 15px;
+  margin-left: 300px;
+}
+.dell figure figcaption{
+  text-align: center;
+  width: 100px;
+}
+
+.inmovidu img{
+  width:150px;
+  height: 150px; 
+  margin-left: 10%; 
+  border: 1px black;
+  border-radius: 5%; 
+  margin-top: 10px;
+  margin-bottom: -20px; 
+  background-color: #fff;
+}
+.inmovidu-info a{
+  margin-right: 10%; 
+  margin-top: 3%; 
+  margin-bottom: 2%;
+}
+.inmovidu-info span{
+  font-size: 15px;
+  margin-left: 235px;
+}
+.inmovidu figure figcaption{
+  text-align: center;
+  width: 100px;
+}
+
+.skill {
+  background-color: #feb84f;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 5%;
+  margin-right: 2%;
+}
+
+
+
+/* Project Details Section */
+.project img{
+  width:150px;
+  height: 150px; 
+  margin-left: 10%; 
+  border: 1px black;
+  border-radius: 5%; 
+  margin-top: 10px;
+  margin-bottom: -20px; 
+  background-color: #fff;
+}
+.project a{
+  margin-right: 27%; 
+  margin-top: 8%; 
+  margin-bottom: 2%;
+}
+
+.technologies {
+  background-color: #b7b4b4 ;     
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 5%;
+  margin-right: 2%;
+}
+
+
+
+/* Education Section */
 .steps-form {  
   width: 10%;
   height: 70%;
@@ -160,9 +334,8 @@
   margin-top: 0; 
 }
 
-
 .graduatea i {
-  margin-left: 88px;
+  margin-left: 150px;
   background-color: darkorange;
   width: 50px;
   height: 50px;
@@ -170,6 +343,7 @@
   top: 50px; 
   font-size: 25px;
   padding-top: 13px;
+  padding-left: 9px;
   border-radius: 100%;
   position: absolute;
 }
@@ -200,14 +374,13 @@
   margin-bottom: 150px;
 }
 
-
 .edu1 p{
   font-size: 20px;
   line-height: 1.5;
   text-align: left;
-  margin-left: 100px;
-  margin-top: 30px;
-  width: 500px;
+  margin-left: 220px;
+  margin-top: 32px;
+  width: 800px;
   height: 40px;
 }
 .edu2 p{
@@ -216,7 +389,7 @@
   text-align: left;
   margin-left: 220px;
   margin-top: 80px;
-  width: 500px;
+  width: 800px;
   height: 40px;
 }
 .edu3 p{
@@ -230,71 +403,16 @@
 }
 
 
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-.row {
-  margin: 10px -16px;
-}
-.row,
-.row > .column {
-  padding: 8px;
-}
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-
+/* Portfolio Section */
 .contentP {
-  background-color: rgb(226, 221, 221);
+  background-color: #e2dddd;
   padding: 10px;
 }
-
-
-.show {
-  display: block;
-}
-
-
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: #ddd;
-}
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
-
-img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 200px; 
-}
-img:hover {
-  box-shadow: 0 0 2px 1px rgba(49, 49, 49, 0.5);
-}
-
-
 .contentP .content {
   position: absolute;
   bottom: 0;
-  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgb(0, 0, 0);       /* Fallback color */
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   color: #f1f1f1;
   width: 100%;
@@ -307,30 +425,201 @@ img:hover {
 }
 
 
-.buton {
-  border: none;
-  padding: 3px 0px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 2px 1px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  margin-left: 250px;
-  position: relative;
-  width: 120px;
-  background-color: black;
-  color: white;
-  border: 2px solid rgb(78, 77, 77);
-}
-.buton:hover {background-color: white ;
-  color: black;
+
+@media screen and (max-width: 1506px){        /* Work Experience Section */                                                                         /* 1506 */
+  
+  .dell figure figcaption {
+    text-align: center;
+  }
+  .inmovidu figure figcaption {
+    text-align: center;
+  }
+
 }
 
 
+@media screen and (max-width: 1432px){       /* Work Experience Section */                                                                         /* 1432 */
 
-@media screen and (max-width: 1105px){
+  .dell-info h3{
+    font-size: 22px;
+  }
+  .dell-info h4{
+    font-size: 18px;
+  }
+  .dell-info span{
+    margin-left: 250px;
+  }
+
+  .inmovidu-info h3{
+    font-size: 22px;
+  }
+  .inmovidu-info h4{
+    font-size: 18px;
+  }
+  .inmovidu-info span{
+    margin-left: 185px;
+  }
+
+}
+
+
+@media screen and (max-width: 1400px){        /* Project Details Section */                                                                         /* 1400 */
+
+  .project a{
+    margin-right: 18%; 
+  }
+
+}
+
+@media screen and (max-width: 1372px){        /* Work Experience Section */                                                                         /* 1372 */
+  
+  .dell-info h3{
+    font-size: 18px;
+  }
+  .dell-info h4{
+    font-size: 15px;
+  }
+  .dell-info span{
+    font-size: 13px;
+    margin-left: 230px;
+  }
+
+  .inmovidu-info h3{
+    font-size: 18px;
+  }
+  .inmovidu-info h4{
+    font-size: 15px;
+  }
+  .inmovidu-info span{
+    font-size: 13px;
+    margin-left: 175px;
+  }
+
+}
+
+
+@media screen and (max-width: 1313px){        /* Project Details Section */                                                                         /* 1313 */
+
+  .project a{
+    margin-right: 5%; 
+  }
+
+}
+
+@media screen and (max-width: 1218px){        /* Work Experience Section */                                                                         /* 1218 */
+  
+  .dell-info h3{
+    font-size: 18px;
+  }
+  .dell-info h4{
+    font-size: 15px;
+  }
+  .dell-info span{
+    margin-left: 160px;
+  }
+
+  .inmovidu-info h3{
+    font-size: 18px;
+  }
+  .inmovidu-info h4{
+    font-size: 15px;
+  }
+  .inmovidu-info span{
+    margin-left: 105px;
+  }
+
+}
+
+
+@media screen and (max-width: 1218px){        /* Work Experience Section */                                                                         /* 1218 */
+
+  .dell-info{
+    padding-left: 30px;
+  }
+  .dell-info span{
+    font-size: 12px;
+  }
+
+  .inmovidu-info{
+    padding-left: 30px;
+  }
+  .inmovidu-info span{
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 1198px){        /* Project Details Section */                                                                         /* 1198 */
+
+  .project img{
+    width:130px;
+    height: 130px; 
+  }
+  .project a{
+    margin-right: -5%; 
+  }
+
+}
+
+@media screen and (max-width: 1125px){        /* Introduction, Work Experience, Portfolio Section */                                                /* 1125 */
+  
+  .intro-about-text i{
+    margin-left: -100%;
+  }
+
+  .dell-info span{
+    margin-left: 140px;
+  }
+
+  .inmovidu-info span{
+    margin-left: 85px;
+  }
+
+  .contentP h4{
+    font-size: 15px;
+  }
+  .contentP p{
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 1115px){        /* Project Details Section */                                                                         /* 1115 */
+
+  .project a{
+    margin-right: -10%; 
+  }
+
+}
+
+@media screen and (max-width: 1105px){        /* Work Experience, Project Details, Education Section */                                             /* 1105 */
+
+  .dell-info{
+    padding-left: 40px;
+  }
+  .dell-info span{
+    margin-left: 110px;
+  }
+
+  .inmovidu-info{
+    padding-left: 40px;
+  }
+  .inmovidu-info span{
+    margin-left: 55px;
+  }
+
+  .project-info{
+    padding-left: 5%;
+  }
+  .project-info h3{
+    font-size: 19px;
+  }
+  .project-info h4{
+    font-size: 16px;
+  }
+  .project-info p{
+    font-size: 14px;
+  }
 
   .edu1 p{
     font-size: 15px;
@@ -341,50 +630,113 @@ img:hover {
   .edu3 p{
     font-size: 15px;
   }
+
 }
 
+@media screen and (max-width: 1089px){        /* Work Experience, Project Details Section */                                                        /* 1089 */
 
-@media screen and (max-width: 1089px){
-
+  /* 
   .bgInfo h1{
     font-size: 25px;
+  } 
+  */
+
+  .dell img{
+    width: 100px;
+    height: 100px;
+  }
+  .dell figure figcaption {
+    margin-left: -30px;
+    text-align: center;
+  }
+  .dell-info{
+    padding-left: 0px;
+  }
+  .dell-info span{
+    margin-left: 80px;
+  }
+
+  .inmovidu-info span{
+    margin-left: 25px;
+  }
+  .inmovidu-info{
+    padding-left: 0px;
+  }
+  .inmovidu img{
+    width: 100px;
+    height: 100px;
+  }
+  .inmovidu figure figcaption {
+    margin-left: -30px;
+    text-align: center;
+  }
+
+  .project a{
+    margin-right: -15%; 
+  }
+
+}
+
+@media screen and (max-width: 1056px){        /* Project Details Section */                                                                         /* 1056 */
+
+  .project a{
+    margin-right: -20%; 
   }
 }
 
+@media screen and (max-width: 1036px){        /* Project Details Section */                                                                         /* 1036 */
 
-@media screen and (max-width: 1000px){           /* when screen gets small figcaption goes */
+  .project a{
+    margin-right: -25%; 
+  }
+  .project-info{
+    padding-left: 7%;
+  }
+}
+
+@media screen and (max-width: 1006px){        /* Project Details Section */                                                                         /* 1006 */
+
+  .project a{
+    margin-right: -35%; 
+  }
+  .project-info{
+    padding-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px){        /* Introduction Section */                                                                            /* 1000 */ 
   
   .intro-about-pic figure img{
      margin-bottom: 0;
   }
-  .intro-about-pic figure figcaption {
-     display: none;
-  }
 
-  .home-bg {                                                                              /* To blur the background image  */
+  /* 
+  .home-bg {                                  To blur the background image  
     min-width: 300px;
     min-height: 660px;
-  }
+  } 
+  */
+
 }
 
-
+/* 
 @media screen and (max-width: 1000px){
-  
+
   .bgInfo h1{
     font-size: 25px;
   }
-}
 
+} 
+*/
 
-@media screen and (max-width: 998px){
+@media screen and (max-width: 998px){         /* Education Section */                                                                               /* 998 */
 
   .steps-form .steps-row:before {
     left: 80px;
     height: 520px;
   }
-  
   .graduatea i {
-    margin-left: -03px;
+    margin-left: 50px;
   }
   .graduateb i {
     margin-left: 50px;
@@ -394,10 +746,9 @@ img:hover {
     margin-left: 50px;
     margin-top: 35px;
   }
-
   .edu1 p{
     font-size: 15px;
-    margin-left: 20px;
+    margin-left: 125px;
     margin-top: 30px;
   }
   .edu2 p{
@@ -410,45 +761,397 @@ img:hover {
     margin-left: 125px;
     margin-top: 85px;
   }
+
 }
 
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 993px){         /* Work Experience Section */                                                                         /* 993 */
   
+  /* 
   .home-bg {          
     margin-top: 60px;
+  } 
+  */
+
+  .dell img{
+    width: 120px;
+    height: 120px;
+  }
+  .dell figure figcaption {
+    margin-left: -15px;
+    text-align: center;
+  }
+  .dell-info{
+    padding-left: 0px;
+  }
+  .dell-info span{
+    margin-left: 220px;
+  }
+
+  .inmovidu-info span{
+    margin-left: 165px;
+  }
+  .inmovidu-info{
+    padding-left: 0px;
+  }
+  .inmovidu img{
+    width: 120px;
+    height: 120px;
+  }
+  .inmovidu figure figcaption {
+    margin-left: -15px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 992px){         /* Work Experience, Project Details Section */                                                        /* 992 */
+
+  .dell-info{
+    padding-left: 10px;
+  }
+  .dell-info span{
+    margin-left: 120px;
+  }
+
+  .inmovidu-info span{
+    margin-left: 65px;
+  }
+  .inmovidu-info{
+    padding-left: 10px;
+  }
+
+  .project a{
+    margin-right: 13%; 
+  }
+  .project-info{
+    padding-left: 0%;
   }
 }
 
+@media screen and (max-width: 991.50px){      /* Project Details Section */                                                                         /* 991.50 */
 
-@media screen and (max-width: 798px){
+  .project a{
+    margin-right: -20%; 
+  }
+  .project-info{
+    padding-left: 5%;
+  }
+}
+
+@media screen and (max-width: 798px){         /* Navigation Bar */                                                                                  /* 798 */
 
   .navB{
     margin-top: 10px;
   }
  
+  /* 
   .bgInfo{
     width: 400px;
     margin-top: 70px;
     margin-left: 150px;
-  } 
+  }  
+  */
+
 }
 
 
-@media screen and (max-width: 575px){
+@media screen and (max-width: 770px){         /* Portfolio Section */                                                                               /* 770 */
+
+  .contentP h4{
+    font-size: 15px;
+  }
+  .contentP p{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 769px){         /* Work Experience Section */                                                                         /* 769 */
+
+  .dell img{
+    margin-left: 180%;
+  }
+  .dell figure figcaption{
+    display: none;
+  }
+  .dell-info{
+    margin-top: 150px;
+    margin-left: -20%;
+  }
+  .dell-info h3{
+    width: 390px;
+  }
+  .dell-info p{
+    width: 500px;
+  }
+  .dell-info span{
+    margin-left: 40px;
+  }
+  .dell-info a{
+    margin-right: -20%;
+  }
+
+  .inmovidu img{
+    margin-left: 180%;
+  }
+  .inmovidu figure figcaption{
+    display: none;
+  }
+  .inmovidu-info{
+    margin-top: 150px;
+    margin-left: -20%;
+  }
+  .inmovidu-info h3{
+    width: 390px;
+  }
+  .inmovidu-info p{
+    width: 500px;
+  }
+  .inmovidu-info span{
+    margin-left: 40px;
+  }
+  .inmovidu-info a{
+    margin-right: -20%;
+  }
+
+}
+
+@media screen and (max-width: 768px){         /* Work Experience, Project Details Section */                                                        /* 768 */
+
+  .dell-info p{
+    width: 400px;
+  }
+
+  .inmovidu-info p{
+    width: 400px;
+  }
+
+  .project-info{
+    margin-top: 200px;
+    margin-left: -140px;
+  }
+  .project-info p{
+    width: 550px;
+  }
+  .project-info h3{
+    width: 550px;
+  }
+  .project-technologies{
+    width: 550px;
+  }
+  .project a{
+    margin-right: -205px;
+  }
+  .project img{
+    margin-left: 200px;
+  }
+
+}
+
+@media screen and (max-width: 767.50px){      /* Project Details Section */                                                                        /* 767.50 */
+
+  .project a{
+    margin-right: -185px;
+  }
+  .project img{
+    margin-left: 140px;
+  }
+  .project-info{
+    margin-left: -120px;
+  }
+  .project-info p{
+    width: 450px;
+  }
+  .project-info h3{
+    width: 450px;
+  }
+  .project-technologies{
+    width: 450px;
+  }
+
+}
+
+
+@media screen and (max-width: 765px){         /* Introduction, Education Section */                                                                /* 765 */
+    
+  .intro-about-pic figure figcaption {
+    display: none;
+  }
+  .intro-about-text p{
+    margin-left: -100%;
+  }
+
+  .edu1 p{
+    width: 400px;
+  }
+  .edu2 p{
+    width: 400px;
+  }
+  .edu3 p{
+    width: 400px;
+  }
   
+}
+
+@media screen and (max-width: 760px){         /* Introduction Section */                                                                           /* 760 */
+
+  .intro-about-text p{
+    margin-left: -100%;
+  }
+  .intro-about-text i{
+    margin-left: -100%;
+  }
+
+}
+
+@media screen and (max-width: 626px){         /* Education Section */                                                                              /* 626 */
+  
+  .edu1 p{
+    width: 320px;
+  }
+  .edu2 p{
+    width: 320px;
+  }
+  .edu3 p{
+    width: 320px;
+  }
+
+}
+
+@media screen and (max-width: 588px){         /* Project Details Section */                                                                        /* 588 */
+  
+  .project-info p{
+    width: 400px;
+  }
+  .project-info h3{
+    width: 400px;
+  }
+  .project-technologies{
+    width: 400px;
+  }
+
+}
+
+
+@media screen and (max-width: 577px){         /* Introduction, Work Experinece, Project Details, Education, Portfolio Section */                   /* 577 */
+
+  .intro-about-text {
+    margin-left: 20px;
+  }
+  .intro-about-text h2, h3{
+    width: 500px;
+  }
+  .intro-about-text a{
+    width: 1000px;
+  }
+
+  .dell{
+    margin-left: 30px;
+  }
+  .dell img{
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+  }
+  .dell-info a{
+    width: 300px;
+  }
+
+  .inmovidu img{
+    width: 100px;
+    height: 100px;
+    margin-left: 200px;
+  }
+  .inmovidu-info a{
+    width: 470px;
+  }
+  .inmovidu-info h3{
+    padding-top: 120px;
+    margin-left: -110px;
+  }
+  .inmovidu-info h4, .inmovidu-info p{
+    margin-left: -110px;
+  }
+  .inmovidu-info span{
+    margin-left: 200px;
+  }
+
+  .project img{
+    width: 100px;
+    height: 100px;
+  }
+  .project a{
+    margin-right: -175px;
+  }
+  .project-info{
+    margin-top: 160px;
+  }
+
+  .edu2{
+    margin-top: 10px;
+  }
+  .edu3{
+    margin-top: 240px;
+  }
+
+  .contentP h4{
+    font-size: 12px;
+  }
+  
+}
+
+@media screen and (max-width: 576px){         /* Introduction, Work Experinece, Education Section */                                               /* 576 */
+  
+  /* 
   .bgInfo{
     width: 400px;
     margin-top: 70px;
     margin-left: 50px;
-  } 
+  }  
+  */
+
+  .intro-about-text p{
+    margin-left: 0%;
+  }
+
+  .dell img{
+    margin-left: 28%;
+  }
+  .dell-info{
+    margin-top: 0px;
+    margin-left: 0%;
+  }
+  .dell-info span{
+    margin-left: 80px;
+  }
+  .dell-info a{
+    margin-right: 20%;
+  }
+
+  .inmovidu img{
+    margin-left: 35%;
+  }
+  .inmovidu-info{
+    margin-top: -120px;
+    margin-left: 110px;
+  }
+  .inmovidu-info span{
+    margin-left: 25px;
+  }
+  .inmovidu-info a{
+    margin-right: 5%;
+  }
+  .inmovidu-info p{
+    width: 390px;
+  }
 
   .steps-form .steps-row:before {
     left: 80px;
     height: 520px;
   }
   .graduatea i {
-    margin-left: -205px;
+    margin-left: 50px;
   }
   .graduateb i {
     margin-left: 50px;
@@ -458,7 +1161,6 @@ img:hover {
     margin-left: 50px;
     margin-top: 35px;
   }
-
   .edu1 p{
     font-size: 12px;
     margin-left: 120px;
@@ -476,4 +1178,128 @@ img:hover {
   }
 
 }
+
+@media screen and (max-width: 576px){         /* Education Section */                                                                              /* 576 */
+
+  .edu3{
+    margin-top: 0px;
+  }
+
+}
+
+@media screen and (max-width: 575.50px){      /* Project Details Section */                                                                        /* 575.50 */
+
+  .project a{
+    margin-right: 120px;
+    margin-top: 2%;
+  }
+  .project-info{
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 571.50px){      /* Project Details Section */                                                                        /* 571.50 */
+
+  .project a{
+    margin-right: 135px;
+  }
+}
+
+@media screen and (max-width: 568px){         /* Project Details Section */                                                                        /* 568 */
+
+  .project a{
+    margin-right: 130px;
+  }
+
+}
+
+
+@media screen and (max-width: 558px){         /* Work Experinece Section */                                                                        /* 558 */
+
+  .dell-info h3, p{
+    width: 330px;
+  }
+  .dell-info span{
+    margin-left: 40px;
+  }
+
+  .inmovidu-info h3, p{
+    width: 330px;
+  }
+  .inmovidu-info span{
+    margin-left: 40px;
+  }
+
+}
+
+
+@media screen and (max-width: 555.50px){      /* Project Details Section */                                                                        /* 555.50 */
+
+  .project a{
+    margin-right: 105px;
+  }
+  .project-info p{
+    width: 380px;
+  }
+  .project-info h3{
+    width: 380px;
+  }
+  .project-technologies{
+    width: 350px;
+  }
+
+}
+
+
+@media screen and (max-width: 539px){         /* Project Details Section */                                                                        /* 539 */
+
+  .project img{
+    margin-left: 130px;
+  }
+  .project-info p{
+    width: 350px;
+  }
+  .project-info h3{
+    width: 350px;
+  }
+  .project-technologies{
+    width: 330px;
+  }
+
+}
+
+
+@media screen and (max-width: 520px){         /* Project Details Section */                                                                        /* 520 */
+
+  .project img{
+    margin-left: 110px;
+  }
+  .project-info p{
+    width: 330px;
+  }
+  .project-info h3{
+    width: 330px;
+  }
+  .project-technologies{
+    width: 280px;
+  }
+
+}
+
+
+@media screen and (max-width: 516px){         /* Work Experience Section */                                                                        /* 516 */
+
+  .dell-info h3, p{
+    width: 340px;
+  }
+
+  .inmovidu-info h3, p{
+    width: 340px;
+  }
+
+}
+
+
+
 
